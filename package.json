@@ -1,6 +1,6 @@
 {
   "name": "knack-sql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and very lightweight sql query builder",
   "main": "index.js",
   "scripts": {
