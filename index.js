@@ -16,7 +16,7 @@ class knack_basic_query
     this.data = typeof(query) === 'string' ? query : ''
   }
 
-  serialze()
+  serialize()
   {
     return this.data + ';'
   }
@@ -40,7 +40,7 @@ class knack_table extends knack_basic_query
     return this
   }
 
-  serialze()
+  serialize()
   {
     let str = this.data
     if (typeof(this.increment) === 'string') {
