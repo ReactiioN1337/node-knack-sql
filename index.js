@@ -3,10 +3,10 @@
 const mysql = require('mysql')
 
 const knack_where_ops = {
-  lessThen:           1,
-  greaterThen:        2,
-  lessThenOrEqual:    3,
-  greaterThenOrEqual: 4
+  lessThan:           1,
+  greaterThan:        2,
+  lessThanOrEqual:    3,
+  greaterThanOrEqual: 4
 }
 
 class knack_basic_query
@@ -109,13 +109,13 @@ class knack_query extends knack_basic_query
         const get_operator = () => {
           if (pair.length === 3) {
             switch (pair[2]) {
-            case knack_where_ops.lessThen:
+            case knack_where_ops.lessThan:
               return '<'
-            case knack_where_ops.greaterThen:
+            case knack_where_ops.greaterThan:
               return '>'
-            case knack_where_ops.lessThenOrEqual:
+            case knack_where_ops.lessThanOrEqual:
               return '<='
-            case knack_where_ops.greaterThenOrEqual:
+            case knack_where_ops.greaterThanOrEqual:
               return '>='
             default:
               break
